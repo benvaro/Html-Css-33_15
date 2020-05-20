@@ -1,0 +1,108 @@
+/* селектор{
+    властивість: значення;
+
+} */
+@font-face {
+    font-family: 'LIBRARY 3 AM soft';
+    src: url('../font/LIBRARY3AMsoft.woff2') format('woff2'),
+        url('../font/LIBRARY3AMsoft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* * - універсальний селектор */
+body {
+    background-color: lightblue;
+    /* color: transparent; */
+    color: black;
+    /* background-image: url(../img/1.png), url(../img/2.png);
+    
+    background-position: right bottom, top left;
+    background-attachment: fixed; */
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+p {
+    color: gray;
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 5%;
+    word-spacing: 10px;
+
+    background: rgba(82, 119, 255, 1);
+    background: -moz-linear-gradient(-45deg, rgba(82, 119, 255, 1) 0%, rgba(82, 119, 255, 1) 16%, rgba(241, 123, 91, 1) 48%, rgba(131, 231, 64, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(82, 119, 255, 1)), color-stop(16%, rgba(82, 119, 255, 1)), color-stop(48%, rgba(241, 123, 91, 1)), color-stop(100%, rgba(131, 231, 64, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(82, 119, 255, 1) 0%, rgba(82, 119, 255, 1) 16%, rgba(241, 123, 91, 1) 48%, rgba(131, 231, 64, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(82, 119, 255, 1) 0%, rgba(82, 119, 255, 1) 16%, rgba(241, 123, 91, 1) 48%, rgba(131, 231, 64, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(82, 119, 255, 1) 0%, rgba(82, 119, 255, 1) 16%, rgba(241, 123, 91, 1) 48%, rgba(131, 231, 64, 1) 100%);
+    background: linear-gradient(135deg, rgba(82, 119, 255, 1) 0%, rgba(82, 119, 255, 1) 16%, rgba(241, 123, 91, 1) 48%, rgba(131, 231, 64, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5277ff', endColorstr='#83e740', GradientType=1);
+}
+
+header {
+    /* border-style: double;
+    border-width: 15px;
+    border-color: rgb(16, 56, 135); */
+    border-radius: 20px 40px;
+
+    border: solid 5px rgb(16, 56, 135);
+
+    border-left-color: yellow;
+    border-left-style: inset;
+
+    border-right: 3px red dashed;
+
+    border-top: double 10px black;
+    /* background: tomato; */
+}
+
+h1 {
+    font-family: 'LIBRARY 3 AM soft';
+    font-weight: normal;
+    font-style: normal;
+    /* -webkit-text-stroke: violet;
+   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke: thin; */
+    /* color:transparent; */
+    text-align: center;
+    /*вирівнювання ТЕКСТУ*/
+    /* font-style: italic; */
+    letter-spacing: 3px;
+    /* font-family: 'Raleway', sans-serif; */
+    text-shadow: 3px -5px 6px #66229a;
+    text-transform: capitalize;
+}
+
+i {
+    color: red;
+}
+
+span {
+    color: purple;
+    font-weight: bold;
+    /* text-decoration-line: underline;
+    text-decoration-color: lightcoral;
+    text-decoration-style: double; */
+    text-decoration: double underline lightseagreen;
+}
+
+hr {
+    width: 30%;
+    height: 5px;
+    background-color: mediumpurple;
+    border: none;
+}
+
+section {
+    font-size: 24px;
+    background-image: url(../img/5.jpg);
+    background-attachment: fixed;
+    -webkit-box-shadow: 6px 2px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 2px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 2px 20px 0px rgba(0, 0, 0, 0.75);
+}
