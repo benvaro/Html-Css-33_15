@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'LIBRARY 3 AM soft';
+    src: url('../fonts/LIBRARY3AMsoft.woff2') format('woff2'),
+        url('../fonts/LIBRARY3AMsoft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-family: 'LIBRARY 3 AM soft';
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    line-height: 2;
+}
+
+.one{
+    /* float: left; */
+    padding: 10px 20px 40px 60px;
+    width: 60%;
+    margin: 30px auto;  /*вирівняти блок по центру*/
+    font-size: 18px;
+    text-indent: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background: orange;
+    box-shadow: inset 4px -2px 6px 3px rgba(0,0,0,0.4);
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    color: pink;
+    text-shadow: -1px -1px 0 black,
+                -1px 1px 0 black, 
+                1px 1px 0 black,
+                1px -1px 0 black;
+}
+
+h3{
+    margin-left: 3%;
+}
+
+.two{
+    font-style: italic;
+    color: brown;
+}
+
+.first{
+    list-style-type: circle;
+    list-style-position: outside;
+    
+    list-style-image: url(../img/1.jpg);
+    width: 50%;
+    background: coral;
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+    /* background: darkgoldenrod; */
+    width: 300px;
+    padding: 0;
+    margin-left: 3%;
+}
+
+.first li{
+    background: darksalmon;
+    border-top: 1px solid gray;
+    margin-top: 5px;
+    font-size: 27px
+}
+
+.with-style li{
+    list-style-type: none;
+    background-color: rgb(103, 161, 214);
+    margin-top: 1px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: -1px 1px 5px 2px grey;
+}
+.with-style li:hover{
+    background-color:  rgb(85, 157, 224);
+    color: gray;
+}
+
+.with-order li
+{
+    list-style-type: decimal-leading-zero;
+    color: black;
+}
