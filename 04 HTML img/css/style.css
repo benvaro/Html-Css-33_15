@@ -1,0 +1,110 @@
+.img {
+
+    /* width: 300px; */
+    height: 200px;
+    border-radius: 50%;
+    border: 2px inset orange;
+    box-shadow: -1px 1px 5px 1px gray;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-left {
+    width: 200px;
+}
+
+.float-left {
+    float: left;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.float-left img:hover {
+    opacity: 0.6;
+}
+
+.clear {
+    clear: both;
+    width: 30%;
+    border: none;
+    background-color: green;
+    height: 2px;
+    margin: 30px auto;
+}
+
+
+.float-right {
+    float: right;
+    margin-top: 0;
+    margin-left: 10px;
+
+}
+
+.text-style {
+    text-align: justify;
+    line-height: 1.5;
+    color: gray;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: darkolivegreen;
+    padding: 5px;
+}
+
+/* .link:visited{
+    color: red;
+} */
+.link:hover {
+    background-color: black;
+    color: white;
+}
+
+.link:active {
+    color: blue;
+}
+
+li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    display: block;
+}
+
+.custom {
+    text-align: center;
+    list-style-type: none;
+    background-color: lightgray;
+    margin-top: 1px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.custom:hover {
+    background-color: lightslategray;
+
+}
+
+.custom:hover a {
+    color: white;
+
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: my;
+}
+li{
+    counter-increment: my;
+}
+li::before{
+    content: counter(my, lower-greek)") ";
+    color: red;
+    font-weight: bold;
+}
