@@ -76,6 +76,18 @@ li a {
     display: block;
 }
 
+.custom-number {
+    list-style-type: none;
+    counter-reset: my;
+}
+.custom-number li{
+    counter-increment: my;
+}
+.custom-number li::before{
+    content: counter(my, lower-greek)") ";
+    color: red;
+    font-weight: bold;
+}
 .custom {
     text-align: center;
     list-style-type: none;
@@ -94,17 +106,4 @@ li a {
 .custom:hover a {
     color: white;
 
-}
-
-ol {
-    list-style-type: none;
-    counter-reset: my;
-}
-li{
-    counter-increment: my;
-}
-li::before{
-    content: counter(my, lower-greek)") ";
-    color: red;
-    font-weight: bold;
 }
