@@ -1,0 +1,75 @@
+@import "variables"; // підключаємо файл із змінними
+@import "mixins"; // підключаємо файл із міксінами
+
+div {
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
+}
+
+ul {
+    @extend div;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        @include cols(5, 5%)
+    }
+}
+
+.one {
+    p {
+        @include font($fontStyle: italic, $color: green);
+        @include borderStyle(10px 20px 30px 40px);
+    }
+}
+
+.one:not(.two) {
+    @include link(red, orange, yellow, green);
+    width: $mainWidth;
+    // height: 200px;
+    background: $bgColor;
+    margin-bottom: 10px;
+    border: $border;
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        margin-right: 5px;
+        background-color: #fafafa;
+
+        // a {
+        //     color: purple;
+        // }
+    }
+
+    span {
+        color: red;
+    }
+}
+
+// .one ul{
+//     list-style-type: none;
+// }
+
+.two {
+    background: $bgColor;
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+}
+
+
+
+// sass
+//scss 

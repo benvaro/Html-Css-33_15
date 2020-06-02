@@ -1,0 +1,82 @@
+div,
+ul {
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main div,
+#main ul {
+    width: 16%;
+    height: 100px;
+    margin-right: 5%;
+    background-color: #45a43e;
+}
+
+#main div:nth-child(5n),
+#main ul:nth-child(5n) {
+    margin-right: 0;
+}
+
+.one p {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    color: green;
+    text-shadow: 2px 3px 3px gray;
+    padding: 10px 20px 30px 40px;
+}
+
+.one:not(.two) {
+    width: 50%;
+    background: #f3f582;
+    margin-bottom: 10px;
+    border: 2px dashed red;
+}
+
+.one:not(.two) a {
+    color: red;
+    text-decoration: none;
+}
+
+.one:not(.two) a:visited {
+    color: green;
+}
+
+.one:not(.two) a:hover {
+    color: orange;
+}
+
+.one:not(.two) a:active {
+    color: yellow;
+}
+
+.one:not(.two) ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.one:not(.two) li {
+    float: left;
+    margin-right: 5px;
+    background-color: #fafafa;
+}
+
+.one:not(.two) span {
+    color: red;
+}
+
+.two {
+    background: #f3f582;
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+}

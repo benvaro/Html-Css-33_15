@@ -1,0 +1,47 @@
+@mixin borderStyle($bord...) {
+    // border: $bord;
+    padding: $bord;
+}
+
+@mixin link($link, $hover, $active, $visited) {
+    a {
+        color: $link;
+        text-decoration: none;
+
+        &:visited {
+            color: $visited;
+        }
+
+        &:hover {
+            // & - додаэмо псевдоклас до батьківського елемента
+            color: $hover;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    // a:hover{
+
+    // }
+}
+
+@mixin font($fontW: bold, $fontSz: 18px, $fontStyle, $color) {
+    font-weight: $fontW;
+    font-size: $fontSz;
+    font-style: $fontStyle;
+    color: $color;
+    text-shadow: 2px 3px 3px gray;
+}
+
+@mixin cols($cols, $margin) {
+    width: ((100% - ($cols - 1) * $margin) / $cols);
+    height: 100px;
+    margin-right: $margin;
+    background-color: $colorText;
+
+    &:nth-child(#{$cols}n) {
+        margin-right: 0;
+    }
+}
