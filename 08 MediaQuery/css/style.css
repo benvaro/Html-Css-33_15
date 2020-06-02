@@ -1,0 +1,124 @@
+.A {
+    background-color: red;
+    display: flex;
+    height: 700px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.B {
+    background-color: orange;
+    height: 98%;
+    width: 20%;
+    /* flex-grow: 1; */
+}
+
+.C {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+    height: 98%;
+    width: 78%;
+    /* flex-grow: 4; */
+}
+
+.D {
+    display: flex;
+    background-color: green;
+    height: 31%;
+    width: 98%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.E {
+    background-color: blue;
+    width: 34%;
+    height: 96%;
+    /* flex-grow: 1; */
+}
+
+.F {
+    background-color: purple;
+    /* flex-grow: 1.8; */
+    width: 62%;
+    height: 96%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.G {
+    background-color: blueviolet;
+    width: 48%;
+    height: 94%;
+}
+
+.H {
+    background-color: grey;
+    width: 48%;
+    height: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.I {
+    background-color: white;
+    width: 94%;
+    height: 46%;
+}
+
+.J {
+    width: 96%;
+}
+
+@media (max-width: 567px) {
+    .A {
+        background-color: tomato;
+    }
+
+    .B {
+        display: none;
+    }
+
+    .H {
+        display: none;
+    }
+
+    .G {
+        width: 98%;
+    }
+
+}
+
+@media (min-width: 568px) {
+    .A {
+        background-color: hotpink;
+    }
+}
+
+@media(min-width: 768px) {
+    .A {
+        background-color: darkolivegreen;
+    }
+}
+
+@media (min-width: 1024px) {
+    .A {
+        background-color: darkblue;
+    }
+}
+
+@media (min-width: 1200px) {
+    .A {
+        background-color: red;
+    }
+
+    .B {
+        background-color: chocolate;
+    }
+}

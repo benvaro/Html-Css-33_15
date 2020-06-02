@@ -1,0 +1,30 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.about,
+.team {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.my-img {
+  max-height: 165px;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.team {
+  background: royalblue url(../img/map.png);
+}
+
+.my-card {
+  padding: 30px 30px 15px 30px;
+}

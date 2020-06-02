@@ -43,20 +43,21 @@ h1{
 
 .button{
     text-decoration: none;
-    display: block;
-    width: 100px;
-    height: 30px;
-    background: #0db8e4;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 1px rgb(175, 173, 173);
-    text-align: center;
-    line-height: 30px;
     color: white;
     text-transform: uppercase;
-    margin: 0 auto;
+    letter-spacing: 1px;
+    background-color: #0db5e4;
+    width: 100px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
     border: 1px solid black;
+    box-shadow: 0px 1px 4px 0px lightblue;
+    margin: 0 auto;
 }
 
 .button:hover{
-    background-color: #357585;
+    background-color: #397485;
 }
